@@ -337,6 +337,97 @@ ex2.c/fast:
 	$(MAKE) $(MAKESILENT) -f Guiao5\CMakeFiles\ex2.c.dir\build.make Guiao5/CMakeFiles/ex2.c.dir/build
 .PHONY : ex2.c/fast
 
+#=============================================================================
+# Target rules for targets named rec
+
+# Build rule for target.
+rec: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 rec
+.PHONY : rec
+
+# fast build rule for target.
+rec/fast:
+	$(MAKE) $(MAKESILENT) -f Guiao6\CMakeFiles\rec.dir\build.make Guiao6/CMakeFiles/rec.dir/build
+.PHONY : rec/fast
+
+#=============================================================================
+# Target rules for targets named recursive
+
+# Build rule for target.
+recursive: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 recursive
+.PHONY : recursive
+
+# fast build rule for target.
+recursive/fast:
+	$(MAKE) $(MAKESILENT) -f Guiao7\CMakeFiles\recursive.dir\build.make Guiao7/CMakeFiles/recursive.dir/build
+.PHONY : recursive/fast
+
+#=============================================================================
+# Target rules for targets named Tests
+
+# Build rule for target.
+Tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Tests
+.PHONY : Tests
+
+# fast build rule for target.
+Tests/fast:
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Tests.dir\build.make Guiao8/CMakeFiles/Tests.dir/build
+.PHONY : Tests/fast
+
+#=============================================================================
+# Target rules for targets named Date.c
+
+# Build rule for target.
+Date.c: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Date.c
+.PHONY : Date.c
+
+# fast build rule for target.
+Date.c/fast:
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Date.c.dir\build.make Guiao8/CMakeFiles/Date.c.dir/build
+.PHONY : Date.c/fast
+
+#=============================================================================
+# Target rules for targets named Date
+
+# Build rule for target.
+Date: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Date
+.PHONY : Date
+
+# fast build rule for target.
+Date/fast:
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Date.dir\build.make Guiao8/CMakeFiles/Date.dir/build
+.PHONY : Date/fast
+
+#=============================================================================
+# Target rules for targets named Person.c
+
+# Build rule for target.
+Person.c: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Person.c
+.PHONY : Person.c
+
+# fast build rule for target.
+Person.c/fast:
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Person.c.dir\build.make Guiao8/CMakeFiles/Person.c.dir/build
+.PHONY : Person.c/fast
+
+#=============================================================================
+# Target rules for targets named Person
+
+# Build rule for target.
+Person: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Person
+.PHONY : Person
+
+# fast build rule for target.
+Person/fast:
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Person.dir\build.make Guiao8/CMakeFiles/Person.dir/build
+.PHONY : Person/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -345,6 +436,11 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Date
+	@echo ... Date.c
+	@echo ... Person
+	@echo ... Person.c
+	@echo ... Tests
 	@echo ... arm
 	@echo ... ex
 	@echo ... ex1
@@ -359,6 +455,8 @@ help:
 	@echo ... fato
 	@echo ... hello
 	@echo ... helloX
+	@echo ... rec
+	@echo ... recursive
 	@echo ... simple
 	@echo ... time
 .PHONY : help

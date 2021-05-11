@@ -1,4 +1,8 @@
 C:\Users\User\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\203.7717.62\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\User\Desktop\AC
 -- Configuring done
+CMake Error: Cannot determine link language for target "Date".
+CMake Error: CMake can not determine linker language for target: Date
+CMake Error: Cannot determine link language for target "Person".
+CMake Error: CMake can not determine linker language for target: Person
 -- Generating done
--- Build files have been written to: C:/Users/User/Desktop/AC/build
+CMake Generate step failed.  Build files cannot be regenerated correctly.

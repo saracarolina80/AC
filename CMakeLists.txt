@@ -9,5 +9,8 @@ add_subdirectory(Guiao2)
 add_subdirectory(Guiao3)
 add_subdirectory(Guiao4)
 add_subdirectory(Guiao5)
+add_subdirectory(Guiao6)
+add_subdirectory(Guiao7)
+add_subdirectory(Guiao8)
 
 

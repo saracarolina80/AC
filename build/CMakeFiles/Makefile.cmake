@@ -39,6 +39,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../Guiao3/CMakeLists.txt"
   "../Guiao4/CMakeLists.txt"
   "../Guiao5/CMakeLists.txt"
+  "../Guiao6/CMakeLists.txt"
+  "../Guiao7/CMakeLists.txt"
+  "../Guiao8/CMakeLists.txt"
   "CMakeFiles/3.17.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.17.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.17.5/CMakeRCCompiler.cmake"
@@ -59,6 +62,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "Guiao3/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Guiao4/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Guiao5/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Guiao6/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Guiao7/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Guiao8/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -79,4 +85,11 @@ set(CMAKE_DEPEND_INFO_FILES
   "Guiao4/CMakeFiles/ex2.dir/DependInfo.cmake"
   "Guiao5/CMakeFiles/ex1.c.dir/DependInfo.cmake"
   "Guiao5/CMakeFiles/ex2.c.dir/DependInfo.cmake"
+  "Guiao6/CMakeFiles/rec.dir/DependInfo.cmake"
+  "Guiao7/CMakeFiles/recursive.dir/DependInfo.cmake"
+  "Guiao8/CMakeFiles/Tests.dir/DependInfo.cmake"
+  "Guiao8/CMakeFiles/Date.c.dir/DependInfo.cmake"
+  "Guiao8/CMakeFiles/Date.dir/DependInfo.cmake"
+  "Guiao8/CMakeFiles/Person.c.dir/DependInfo.cmake"
+  "Guiao8/CMakeFiles/Person.dir/DependInfo.cmake"
   )

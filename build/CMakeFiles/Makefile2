@@ -77,6 +77,9 @@ all: Guiao2/all
 all: Guiao3/all
 all: Guiao4/all
 all: Guiao5/all
+all: Guiao6/all
+all: Guiao7/all
+all: Guiao8/all
 
 .PHONY : all
 
@@ -86,6 +89,9 @@ preinstall: Guiao2/preinstall
 preinstall: Guiao3/preinstall
 preinstall: Guiao4/preinstall
 preinstall: Guiao5/preinstall
+preinstall: Guiao6/preinstall
+preinstall: Guiao7/preinstall
+preinstall: Guiao8/preinstall
 
 .PHONY : preinstall
 
@@ -95,6 +101,9 @@ clean: Guiao2/clean
 clean: Guiao3/clean
 clean: Guiao4/clean
 clean: Guiao5/clean
+clean: Guiao6/clean
+clean: Guiao7/clean
+clean: Guiao8/clean
 
 .PHONY : clean
 
@@ -211,13 +220,75 @@ Guiao5/clean: Guiao5/CMakeFiles/ex2.c.dir/clean
 .PHONY : Guiao5/clean
 
 #=============================================================================
+# Directory level rules for directory Guiao6
+
+# Recursive "all" directory target.
+Guiao6/all: Guiao6/CMakeFiles/rec.dir/all
+
+.PHONY : Guiao6/all
+
+# Recursive "preinstall" directory target.
+Guiao6/preinstall:
+
+.PHONY : Guiao6/preinstall
+
+# Recursive "clean" directory target.
+Guiao6/clean: Guiao6/CMakeFiles/rec.dir/clean
+
+.PHONY : Guiao6/clean
+
+#=============================================================================
+# Directory level rules for directory Guiao7
+
+# Recursive "all" directory target.
+Guiao7/all: Guiao7/CMakeFiles/recursive.dir/all
+
+.PHONY : Guiao7/all
+
+# Recursive "preinstall" directory target.
+Guiao7/preinstall:
+
+.PHONY : Guiao7/preinstall
+
+# Recursive "clean" directory target.
+Guiao7/clean: Guiao7/CMakeFiles/recursive.dir/clean
+
+.PHONY : Guiao7/clean
+
+#=============================================================================
+# Directory level rules for directory Guiao8
+
+# Recursive "all" directory target.
+Guiao8/all: Guiao8/CMakeFiles/Tests.dir/all
+Guiao8/all: Guiao8/CMakeFiles/Date.c.dir/all
+Guiao8/all: Guiao8/CMakeFiles/Date.dir/all
+Guiao8/all: Guiao8/CMakeFiles/Person.c.dir/all
+Guiao8/all: Guiao8/CMakeFiles/Person.dir/all
+
+.PHONY : Guiao8/all
+
+# Recursive "preinstall" directory target.
+Guiao8/preinstall:
+
+.PHONY : Guiao8/preinstall
+
+# Recursive "clean" directory target.
+Guiao8/clean: Guiao8/CMakeFiles/Tests.dir/clean
+Guiao8/clean: Guiao8/CMakeFiles/Date.c.dir/clean
+Guiao8/clean: Guiao8/CMakeFiles/Date.dir/clean
+Guiao8/clean: Guiao8/CMakeFiles/Person.c.dir/clean
+Guiao8/clean: Guiao8/CMakeFiles/Person.dir/clean
+
+.PHONY : Guiao8/clean
+
+#=============================================================================
 # Target rules for target Guiao1/CMakeFiles/helloX.dir
 
 # All Build rule for target.
 Guiao1/CMakeFiles/helloX.dir/all:
 	$(MAKE) $(MAKESILENT) -f Guiao1\CMakeFiles\helloX.dir\build.make Guiao1/CMakeFiles/helloX.dir/depend
 	$(MAKE) $(MAKESILENT) -f Guiao1\CMakeFiles\helloX.dir\build.make Guiao1/CMakeFiles/helloX.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=27,28 "Built target helloX"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=33,34 "Built target helloX"
 .PHONY : Guiao1/CMakeFiles/helloX.dir/all
 
 # Build rule for subdir invocation for target.
@@ -244,7 +315,7 @@ Guiao1/CMakeFiles/helloX.dir/clean:
 Guiao1/CMakeFiles/ex3.dir/all:
 	$(MAKE) $(MAKESILENT) -f Guiao1\CMakeFiles\ex3.dir\build.make Guiao1/CMakeFiles/ex3.dir/depend
 	$(MAKE) $(MAKESILENT) -f Guiao1\CMakeFiles\ex3.dir\build.make Guiao1/CMakeFiles/ex3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=13,14 "Built target ex3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=19,20 "Built target ex3"
 .PHONY : Guiao1/CMakeFiles/ex3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -271,7 +342,7 @@ Guiao1/CMakeFiles/ex3.dir/clean:
 Guiao1/CMakeFiles/ex4.dir/all:
 	$(MAKE) $(MAKESILENT) -f Guiao1\CMakeFiles\ex4.dir\build.make Guiao1/CMakeFiles/ex4.dir/depend
 	$(MAKE) $(MAKESILENT) -f Guiao1\CMakeFiles\ex4.dir\build.make Guiao1/CMakeFiles/ex4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=15,16 "Built target ex4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=21,22 "Built target ex4"
 .PHONY : Guiao1/CMakeFiles/ex4.dir/all
 
 # Build rule for subdir invocation for target.
@@ -298,7 +369,7 @@ Guiao1/CMakeFiles/ex4.dir/clean:
 Guiao1/CMakeFiles/simple.dir/all:
 	$(MAKE) $(MAKESILENT) -f Guiao1\CMakeFiles\simple.dir\build.make Guiao1/CMakeFiles/simple.dir/depend
 	$(MAKE) $(MAKESILENT) -f Guiao1\CMakeFiles\simple.dir\build.make Guiao1/CMakeFiles/simple.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=29,30 "Built target simple"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=39,40 "Built target simple"
 .PHONY : Guiao1/CMakeFiles/simple.dir/all
 
 # Build rule for subdir invocation for target.
@@ -325,7 +396,7 @@ Guiao1/CMakeFiles/simple.dir/clean:
 Guiao1/CMakeFiles/ex5.dir/all:
 	$(MAKE) $(MAKESILENT) -f Guiao1\CMakeFiles\ex5.dir\build.make Guiao1/CMakeFiles/ex5.dir/depend
 	$(MAKE) $(MAKESILENT) -f Guiao1\CMakeFiles\ex5.dir\build.make Guiao1/CMakeFiles/ex5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=17,18 "Built target ex5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=23,24 "Built target ex5"
 .PHONY : Guiao1/CMakeFiles/ex5.dir/all
 
 # Build rule for subdir invocation for target.
@@ -352,7 +423,7 @@ Guiao1/CMakeFiles/ex5.dir/clean:
 Guiao1/CMakeFiles/hello.dir/all:
 	$(MAKE) $(MAKESILENT) -f Guiao1\CMakeFiles\hello.dir\build.make Guiao1/CMakeFiles/hello.dir/depend
 	$(MAKE) $(MAKESILENT) -f Guiao1\CMakeFiles\hello.dir\build.make Guiao1/CMakeFiles/hello.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=25,26 "Built target hello"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=31,32 "Built target hello"
 .PHONY : Guiao1/CMakeFiles/hello.dir/all
 
 # Build rule for subdir invocation for target.
@@ -379,7 +450,7 @@ Guiao1/CMakeFiles/hello.dir/clean:
 Guiao1/CMakeFiles/ex6.dir/all:
 	$(MAKE) $(MAKESILENT) -f Guiao1\CMakeFiles\ex6.dir\build.make Guiao1/CMakeFiles/ex6.dir/depend
 	$(MAKE) $(MAKESILENT) -f Guiao1\CMakeFiles\ex6.dir\build.make Guiao1/CMakeFiles/ex6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=19,20 "Built target ex6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=25,26 "Built target ex6"
 .PHONY : Guiao1/CMakeFiles/ex6.dir/all
 
 # Build rule for subdir invocation for target.
@@ -406,7 +477,7 @@ Guiao1/CMakeFiles/ex6.dir/clean:
 Guiao2/CMakeFiles/arm.dir/all:
 	$(MAKE) $(MAKESILENT) -f Guiao2\CMakeFiles\arm.dir\build.make Guiao2/CMakeFiles/arm.dir/depend
 	$(MAKE) $(MAKESILENT) -f Guiao2\CMakeFiles\arm.dir\build.make Guiao2/CMakeFiles/arm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=1,2 "Built target arm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=7,8 "Built target arm"
 .PHONY : Guiao2/CMakeFiles/arm.dir/all
 
 # Build rule for subdir invocation for target.
@@ -433,7 +504,7 @@ Guiao2/CMakeFiles/arm.dir/clean:
 Guiao2/CMakeFiles/f1.dir/all:
 	$(MAKE) $(MAKESILENT) -f Guiao2\CMakeFiles\f1.dir\build.make Guiao2/CMakeFiles/f1.dir/depend
 	$(MAKE) $(MAKESILENT) -f Guiao2\CMakeFiles\f1.dir\build.make Guiao2/CMakeFiles/f1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=21,22 "Built target f1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=27,28 "Built target f1"
 .PHONY : Guiao2/CMakeFiles/f1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -460,7 +531,7 @@ Guiao2/CMakeFiles/f1.dir/clean:
 Guiao2/CMakeFiles/fato.dir/all:
 	$(MAKE) $(MAKESILENT) -f Guiao2\CMakeFiles\fato.dir\build.make Guiao2/CMakeFiles/fato.dir/depend
 	$(MAKE) $(MAKESILENT) -f Guiao2\CMakeFiles\fato.dir\build.make Guiao2/CMakeFiles/fato.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=23,24 "Built target fato"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=29,30 "Built target fato"
 .PHONY : Guiao2/CMakeFiles/fato.dir/all
 
 # Build rule for subdir invocation for target.
@@ -487,7 +558,7 @@ Guiao2/CMakeFiles/fato.dir/clean:
 Guiao3/CMakeFiles/ex.dir/all:
 	$(MAKE) $(MAKESILENT) -f Guiao3\CMakeFiles\ex.dir\build.make Guiao3/CMakeFiles/ex.dir/depend
 	$(MAKE) $(MAKESILENT) -f Guiao3\CMakeFiles\ex.dir\build.make Guiao3/CMakeFiles/ex.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=3,4 "Built target ex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=9,10 "Built target ex"
 .PHONY : Guiao3/CMakeFiles/ex.dir/all
 
 # Build rule for subdir invocation for target.
@@ -514,7 +585,7 @@ Guiao3/CMakeFiles/ex.dir/clean:
 Guiao3/CMakeFiles/time.dir/all:
 	$(MAKE) $(MAKESILENT) -f Guiao3\CMakeFiles\time.dir\build.make Guiao3/CMakeFiles/time.dir/depend
 	$(MAKE) $(MAKESILENT) -f Guiao3\CMakeFiles\time.dir\build.make Guiao3/CMakeFiles/time.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=31,32 "Built target time"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=41,42 "Built target time"
 .PHONY : Guiao3/CMakeFiles/time.dir/all
 
 # Build rule for subdir invocation for target.
@@ -541,7 +612,7 @@ Guiao3/CMakeFiles/time.dir/clean:
 Guiao4/CMakeFiles/ex1.dir/all:
 	$(MAKE) $(MAKESILENT) -f Guiao4\CMakeFiles\ex1.dir\build.make Guiao4/CMakeFiles/ex1.dir/depend
 	$(MAKE) $(MAKESILENT) -f Guiao4\CMakeFiles\ex1.dir\build.make Guiao4/CMakeFiles/ex1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=5,6 "Built target ex1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=11,12 "Built target ex1"
 .PHONY : Guiao4/CMakeFiles/ex1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -568,7 +639,7 @@ Guiao4/CMakeFiles/ex1.dir/clean:
 Guiao4/CMakeFiles/ex2.dir/all:
 	$(MAKE) $(MAKESILENT) -f Guiao4\CMakeFiles\ex2.dir\build.make Guiao4/CMakeFiles/ex2.dir/depend
 	$(MAKE) $(MAKESILENT) -f Guiao4\CMakeFiles\ex2.dir\build.make Guiao4/CMakeFiles/ex2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=9,10 "Built target ex2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=15,16 "Built target ex2"
 .PHONY : Guiao4/CMakeFiles/ex2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -595,7 +666,7 @@ Guiao4/CMakeFiles/ex2.dir/clean:
 Guiao5/CMakeFiles/ex1.c.dir/all:
 	$(MAKE) $(MAKESILENT) -f Guiao5\CMakeFiles\ex1.c.dir\build.make Guiao5/CMakeFiles/ex1.c.dir/depend
 	$(MAKE) $(MAKESILENT) -f Guiao5\CMakeFiles\ex1.c.dir\build.make Guiao5/CMakeFiles/ex1.c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=7,8 "Built target ex1.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=13,14 "Built target ex1.c"
 .PHONY : Guiao5/CMakeFiles/ex1.c.dir/all
 
 # Build rule for subdir invocation for target.
@@ -622,7 +693,7 @@ Guiao5/CMakeFiles/ex1.c.dir/clean:
 Guiao5/CMakeFiles/ex2.c.dir/all:
 	$(MAKE) $(MAKESILENT) -f Guiao5\CMakeFiles\ex2.c.dir\build.make Guiao5/CMakeFiles/ex2.c.dir/depend
 	$(MAKE) $(MAKESILENT) -f Guiao5\CMakeFiles\ex2.c.dir\build.make Guiao5/CMakeFiles/ex2.c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=11,12 "Built target ex2.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=17,18 "Built target ex2.c"
 .PHONY : Guiao5/CMakeFiles/ex2.c.dir/all
 
 # Build rule for subdir invocation for target.
@@ -641,6 +712,195 @@ ex2.c: Guiao5/CMakeFiles/ex2.c.dir/rule
 Guiao5/CMakeFiles/ex2.c.dir/clean:
 	$(MAKE) $(MAKESILENT) -f Guiao5\CMakeFiles\ex2.c.dir\build.make Guiao5/CMakeFiles/ex2.c.dir/clean
 .PHONY : Guiao5/CMakeFiles/ex2.c.dir/clean
+
+#=============================================================================
+# Target rules for target Guiao6/CMakeFiles/rec.dir
+
+# All Build rule for target.
+Guiao6/CMakeFiles/rec.dir/all:
+	$(MAKE) $(MAKESILENT) -f Guiao6\CMakeFiles\rec.dir\build.make Guiao6/CMakeFiles/rec.dir/depend
+	$(MAKE) $(MAKESILENT) -f Guiao6\CMakeFiles\rec.dir\build.make Guiao6/CMakeFiles/rec.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=35,36 "Built target rec"
+.PHONY : Guiao6/CMakeFiles/rec.dir/all
+
+# Build rule for subdir invocation for target.
+Guiao6/CMakeFiles/rec.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\AC\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Guiao6/CMakeFiles/rec.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\AC\build\CMakeFiles 0
+.PHONY : Guiao6/CMakeFiles/rec.dir/rule
+
+# Convenience name for target.
+rec: Guiao6/CMakeFiles/rec.dir/rule
+
+.PHONY : rec
+
+# clean rule for target.
+Guiao6/CMakeFiles/rec.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Guiao6\CMakeFiles\rec.dir\build.make Guiao6/CMakeFiles/rec.dir/clean
+.PHONY : Guiao6/CMakeFiles/rec.dir/clean
+
+#=============================================================================
+# Target rules for target Guiao7/CMakeFiles/recursive.dir
+
+# All Build rule for target.
+Guiao7/CMakeFiles/recursive.dir/all:
+	$(MAKE) $(MAKESILENT) -f Guiao7\CMakeFiles\recursive.dir\build.make Guiao7/CMakeFiles/recursive.dir/depend
+	$(MAKE) $(MAKESILENT) -f Guiao7\CMakeFiles\recursive.dir\build.make Guiao7/CMakeFiles/recursive.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=37,38 "Built target recursive"
+.PHONY : Guiao7/CMakeFiles/recursive.dir/all
+
+# Build rule for subdir invocation for target.
+Guiao7/CMakeFiles/recursive.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\AC\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Guiao7/CMakeFiles/recursive.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\AC\build\CMakeFiles 0
+.PHONY : Guiao7/CMakeFiles/recursive.dir/rule
+
+# Convenience name for target.
+recursive: Guiao7/CMakeFiles/recursive.dir/rule
+
+.PHONY : recursive
+
+# clean rule for target.
+Guiao7/CMakeFiles/recursive.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Guiao7\CMakeFiles\recursive.dir\build.make Guiao7/CMakeFiles/recursive.dir/clean
+.PHONY : Guiao7/CMakeFiles/recursive.dir/clean
+
+#=============================================================================
+# Target rules for target Guiao8/CMakeFiles/Tests.dir
+
+# All Build rule for target.
+Guiao8/CMakeFiles/Tests.dir/all:
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Tests.dir\build.make Guiao8/CMakeFiles/Tests.dir/depend
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Tests.dir\build.make Guiao8/CMakeFiles/Tests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=5,6 "Built target Tests"
+.PHONY : Guiao8/CMakeFiles/Tests.dir/all
+
+# Build rule for subdir invocation for target.
+Guiao8/CMakeFiles/Tests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\AC\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Guiao8/CMakeFiles/Tests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\AC\build\CMakeFiles 0
+.PHONY : Guiao8/CMakeFiles/Tests.dir/rule
+
+# Convenience name for target.
+Tests: Guiao8/CMakeFiles/Tests.dir/rule
+
+.PHONY : Tests
+
+# clean rule for target.
+Guiao8/CMakeFiles/Tests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Tests.dir\build.make Guiao8/CMakeFiles/Tests.dir/clean
+.PHONY : Guiao8/CMakeFiles/Tests.dir/clean
+
+#=============================================================================
+# Target rules for target Guiao8/CMakeFiles/Date.c.dir
+
+# All Build rule for target.
+Guiao8/CMakeFiles/Date.c.dir/all:
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Date.c.dir\build.make Guiao8/CMakeFiles/Date.c.dir/depend
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Date.c.dir\build.make Guiao8/CMakeFiles/Date.c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=1,2 "Built target Date.c"
+.PHONY : Guiao8/CMakeFiles/Date.c.dir/all
+
+# Build rule for subdir invocation for target.
+Guiao8/CMakeFiles/Date.c.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\AC\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Guiao8/CMakeFiles/Date.c.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\AC\build\CMakeFiles 0
+.PHONY : Guiao8/CMakeFiles/Date.c.dir/rule
+
+# Convenience name for target.
+Date.c: Guiao8/CMakeFiles/Date.c.dir/rule
+
+.PHONY : Date.c
+
+# clean rule for target.
+Guiao8/CMakeFiles/Date.c.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Date.c.dir\build.make Guiao8/CMakeFiles/Date.c.dir/clean
+.PHONY : Guiao8/CMakeFiles/Date.c.dir/clean
+
+#=============================================================================
+# Target rules for target Guiao8/CMakeFiles/Date.dir
+
+# All Build rule for target.
+Guiao8/CMakeFiles/Date.dir/all:
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Date.dir\build.make Guiao8/CMakeFiles/Date.dir/depend
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Date.dir\build.make Guiao8/CMakeFiles/Date.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num= "Built target Date"
+.PHONY : Guiao8/CMakeFiles/Date.dir/all
+
+# Build rule for subdir invocation for target.
+Guiao8/CMakeFiles/Date.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\AC\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Guiao8/CMakeFiles/Date.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\AC\build\CMakeFiles 0
+.PHONY : Guiao8/CMakeFiles/Date.dir/rule
+
+# Convenience name for target.
+Date: Guiao8/CMakeFiles/Date.dir/rule
+
+.PHONY : Date
+
+# clean rule for target.
+Guiao8/CMakeFiles/Date.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Date.dir\build.make Guiao8/CMakeFiles/Date.dir/clean
+.PHONY : Guiao8/CMakeFiles/Date.dir/clean
+
+#=============================================================================
+# Target rules for target Guiao8/CMakeFiles/Person.c.dir
+
+# All Build rule for target.
+Guiao8/CMakeFiles/Person.c.dir/all:
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Person.c.dir\build.make Guiao8/CMakeFiles/Person.c.dir/depend
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Person.c.dir\build.make Guiao8/CMakeFiles/Person.c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num=3,4 "Built target Person.c"
+.PHONY : Guiao8/CMakeFiles/Person.c.dir/all
+
+# Build rule for subdir invocation for target.
+Guiao8/CMakeFiles/Person.c.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\AC\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Guiao8/CMakeFiles/Person.c.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\AC\build\CMakeFiles 0
+.PHONY : Guiao8/CMakeFiles/Person.c.dir/rule
+
+# Convenience name for target.
+Person.c: Guiao8/CMakeFiles/Person.c.dir/rule
+
+.PHONY : Person.c
+
+# clean rule for target.
+Guiao8/CMakeFiles/Person.c.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Person.c.dir\build.make Guiao8/CMakeFiles/Person.c.dir/clean
+.PHONY : Guiao8/CMakeFiles/Person.c.dir/clean
+
+#=============================================================================
+# Target rules for target Guiao8/CMakeFiles/Person.dir
+
+# All Build rule for target.
+Guiao8/CMakeFiles/Person.dir/all:
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Person.dir\build.make Guiao8/CMakeFiles/Person.dir/depend
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Person.dir\build.make Guiao8/CMakeFiles/Person.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\User\Desktop\AC\build\CMakeFiles --progress-num= "Built target Person"
+.PHONY : Guiao8/CMakeFiles/Person.dir/all
+
+# Build rule for subdir invocation for target.
+Guiao8/CMakeFiles/Person.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\AC\build\CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Guiao8/CMakeFiles/Person.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\User\Desktop\AC\build\CMakeFiles 0
+.PHONY : Guiao8/CMakeFiles/Person.dir/rule
+
+# Convenience name for target.
+Person: Guiao8/CMakeFiles/Person.dir/rule
+
+.PHONY : Person
+
+# clean rule for target.
+Guiao8/CMakeFiles/Person.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Guiao8\CMakeFiles\Person.dir\build.make Guiao8/CMakeFiles/Person.dir/clean
+.PHONY : Guiao8/CMakeFiles/Person.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

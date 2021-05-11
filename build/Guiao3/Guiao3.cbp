@@ -5,7 +5,7 @@
 		<Option title="Guiao3"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Guiao1\;CMake Files\Guiao2\;CMake Files\Guiao3\;CMake Files\Guiao4\;CMake Files\Guiao5\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Guiao1\;CMake Files\Guiao2\;CMake Files\Guiao3\;CMake Files\Guiao4\;CMake Files\Guiao5\;CMake Files\Guiao6\;CMake Files\Guiao7\;CMake Files\Guiao8\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="C:/Users/User/Desktop/AC/build/Guiao3"/>
@@ -113,6 +113,15 @@
 		</Unit>
 		<Unit filename="C:/Users/User/Desktop/AC/Guiao5/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Guiao5\"/>
+		</Unit>
+		<Unit filename="C:/Users/User/Desktop/AC/Guiao6/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Guiao6\"/>
+		</Unit>
+		<Unit filename="C:/Users/User/Desktop/AC/Guiao7/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Guiao7\"/>
+		</Unit>
+		<Unit filename="C:/Users/User/Desktop/AC/Guiao8/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Guiao8\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

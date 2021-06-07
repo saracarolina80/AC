@@ -1,5 +1,5 @@
-// NMEC: ...
-// NICK: ...
+// NMEC: 98376
+// NICK: Sara Gonçalves
 
 // Complete the functions (marked by ...)
 // so that it passes all tests in Tests.
@@ -38,13 +38,24 @@ static void printP(void *p) { PersonPrintf((Person *)p, ""); }
 PersonSet *PersonSetCreate() {
   // You must allocate space for the struct and create an empty persons tree!
   //...
+  PersonSet* pps = (PersonSet*)malloc(sizeof(*pps));
+
+  pps->persons = BSTreeCreate(cmpP , printP);
+
+  if (pps == NULL) return NULL;
   
+  return pps;
 }
 
 // Destroy PersonSet *pps
 void PersonSetDestroy(PersonSet **pps) {
   assert(*pps != NULL);
+  
   //...
+  BSTreeDestroy(&((*pps)->persons));
+  free((*pps)->persons);
+  free(*pps);
+  *pps = NULL;
   
 }
 
@@ -77,7 +88,7 @@ static Person *search(const PersonSet *ps, int id) {
 // Do nothing if *ps already contains a person with the same id.
 void PersonSetAdd(PersonSet *ps, Person *p) {
   //...
-  
+  BSTreeAdd(ps->persons, p);
 }
 
 // Pop one person out of *ps.
@@ -85,7 +96,9 @@ Person *PersonSetPop(PersonSet *ps) {
   assert(!PersonSetIsEmpty(ps));
   // It is easiest to pop and return the first person in the set!
   //...
-  
+  Person *pps = (Person *)BSTreeGetMax(ps->persons);
+  BSTreeRemove(ps->persons, BSTreeGetMax(ps->persons));
+  return pps;
 }
 
 // Remove the person with given id from *ps, and return it.
@@ -93,7 +106,13 @@ Person *PersonSetPop(PersonSet *ps) {
 Person *PersonSetRemove(PersonSet *ps, int id) {
   // You may call search here!
   //...
+  Person *pps = search(ps, id);
   
+  if (pps != NULL){
+    BSTreeRemove(ps->persons, pps);
+  }
+  return pps;
+
 }
 
 // Get the person with given id of *ps.
@@ -101,7 +120,7 @@ Person *PersonSetRemove(PersonSet *ps, int id) {
 Person *PersonSetGet(const PersonSet *ps, int id) {
   // You may call search here!
   //...
-  
+   return search(ps, id);
 }
 
 // Return true (!= 0) if set contains person with given id, false otherwise.
@@ -113,8 +132,24 @@ int PersonSetContains(const PersonSet *ps, int id) {
 // NOTE: memory is allocated.  Client must call PersonSetDestroy!
 PersonSet *PersonSetUnion(const PersonSet *ps1, const PersonSet *ps2) {
   PersonSet *ps = PersonSetCreate();
-  //...
   
+  //...
+  Queue *q = BSTreeGetItems(ps1->persons);
+
+  while (!QueueIsEmpty(q)){
+    BSTreeAdd(ps->persons, QueueDequeue(q));
+  }
+  
+  QueueDestroy(&q);
+  q = BSTreeGetItems(ps2->persons);
+  
+  while (!QueueIsEmpty(q)){
+    BSTreeAdd(ps->persons, QueueDequeue(q));
+  }
+
+  QueueDestroy(&q);
+  free(q);
+
   return ps;
 }
 
@@ -123,7 +158,17 @@ PersonSet *PersonSetUnion(const PersonSet *ps1, const PersonSet *ps2) {
 PersonSet *PersonSetIntersection(const PersonSet *ps1, const PersonSet *ps2) {
   PersonSet *ps = PersonSetCreate();
   //...
+  Queue *q = BSTreeGetItems(ps1->persons);
+ 
+  while (!QueueIsEmpty(q)){
+    Person *pps = (Person *)QueueDequeue(q);
+    
+    if (BSTreeContains(ps2->persons, pps)){
+      BSTreeAdd(ps->persons, pps);
+    } 
   
+  }
+  QueueDestroy(&q);
   return ps;
 }
 
@@ -132,14 +177,43 @@ PersonSet *PersonSetIntersection(const PersonSet *ps1, const PersonSet *ps2) {
 PersonSet *PersonSetDifference(const PersonSet *ps1, const PersonSet *ps2) {
   PersonSet *ps = PersonSetCreate();
   //...
+  Queue *q = BSTreeGetItems(ps1->persons);
   
+  while (!QueueIsEmpty(q)){
+    BSTreeAdd(ps->persons, QueueDequeue(q));
+  }
+
+  QueueDestroy(&q);
+
+  q = BSTreeGetItems(ps2->persons);
+  while (!QueueIsEmpty(q)){
+    Person *pps = (Person *)QueueDequeue(q);
+
+    if (!BSTreeContains(ps1->persons, pps)){
+      BSTreeAdd(ps->persons, pps);
+    }
+  }
+
+  QueueDestroy(&q);
   return ps;
 }
 
 // Return true iff *ps1 is a subset of *ps2.
 int PersonSetIsSubset(const PersonSet *ps1, const PersonSet *ps2) {
   //...
-  
+
+  Queue *q = BSTreeGetItems(ps1->persons);
+
+  while (!QueueIsEmpty(q)){
+
+    if (!BSTreeContains(ps2->persons, (Person *)QueueDequeue(q))){
+      return 0;
+    }
+  }
+
+  QueueDestroy(&q);
+
+  return 1;
 }
 
 // Return true if the two sets contain exactly the same elements.
